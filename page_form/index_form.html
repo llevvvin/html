@@ -1,0 +1,274 @@
+<DOCTYPE html>
+    <html lang="en">
+    <head>
+        
+        <meta charset="UTF-8">
+      
+      <link rel="stylesheet" href="style_form.css">
+      <title>Document</title>
+      
+    </head>
+    <body  >
+        
+        <header>
+          
+    
+    <div class="overlay"></div>
+    
+    <div class="text">
+        <div class="wrapper">
+            <div id="L" class="letter">L</div>
+            <div class="shadow">L</div>
+        </div>
+        <div class="wrapper">
+            <div id="E" class="letter">E</div>
+            <div class="shadow">E</div>
+        </div>
+        <div class="wrapper">
+            <div id="V" class="letter">V</div>
+            <div class="shadow">V</div>
+        </div>
+        <div class="wrapper">
+            <div id="I" class="letter">I</div>
+            <div class="shadow">I</div>
+        </div>
+        <div class="wrapper">
+            <div id="N" class="letter">N</div>
+            <div class="shadow">N</div>
+        </div>
+        
+    </div>
+    <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+    
+    <nav role="navigation" class="primary-navigation">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#">Work &dtrif;</a>
+          <ul class="dropdown">
+            <li><a href="../page_about/index_contacts.html">What's on?</a></li>
+            <li><a href="#">Our actors</a></li>
+            <li><a href="../page_tickets/index_tickets.html">Buy tickets</a></li>
+            <li><a href="../page_quiz/index_quiz.html">Quiz</a></li>
+          </ul>
+        </li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">LogIn</a></li>
+      </ul>
+    </nav>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <div class="search-box">
+    
+        <button class="btn-search">  <i class="material-icons">search
+        </i></button>
+        <input type="text" class="input-search" placeholder="Type to Search...">
+      </div>
+    
+    
+    
+    
+    
+    
+    </div> 
+        </header>
+       
+        <form action='#0'onsubmit="okno()">
+
+          <div>
+            <input type="text" id="first_name" name="first_name" required placeholder=" " />
+            <label for="first_name">First Name</label>
+          </div>
+          
+          <div>
+            <input type="text" id="last_name" name="last_name" required placeholder=" " />
+            <label for="last_name">Last Name</label>
+          </div>
+          
+          <div>
+            <input type="email" id="email" name="email" required placeholder=" " />
+            <label for="email">Email Address</label>
+            <div class="requirements">
+              Must be a valid email address.
+            </div>
+          </div>
+          
+          <div>
+            <input type="password" id="password" name="password" required placeholder=" " pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" />
+            <label for="password">Password</label>
+            <div class="requirements">
+              Your password must be at least 6 characters as well as contain at least one uppercase, one lowercase, and one number.
+            </div>
+          </div>
+          
+          <button type="submit" value="Submit" style="background-color: rgb(4, 8, 62);">Submit</button>
+
+          <button type="delete" value="Delete" onclick="deleteField(),okno()" style="background-color: red;">Delete</button>
+        </form>
+        
+        
+        
+        
+        
+    
+
+
+
+
+        <div class="bg-image">
+          
+           </div>
+         
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <div class="floating-container">
+      <div class="floating-button">+</div>
+      <div class="element-container">
+    
+        <a href="#" id="myBtn"> <span class="float-element tooltip-left">
+          <i class="material-icons">phone
+          </i>
+        </span></a>
+        <a href="#" id="myBtn1">  <span class="float-element">
+          <i class="material-icons">email
+    </i>
+        </span></a>
+        <a href="#" id="myBtn2">  <span class="float-element">
+          <i class="material-icons">chat</i>
+        </span></a>
+      </div>
+    
+      <div id="myModal" class="modal">
+    
+       
+        <div class="modal-content">
+          <span class="close">&times;</span>
+         
+        <p> <b>Phone number:</b> +380(50)-401-4814</p>
+        </div></div>
+    
+        <div id="myModal1" class="modal1">
+    
+       
+            <div class="modal-content1">
+              <span class="close1">&times;</span>
+             
+            <p> <b>Email:</b> Oleksandr.levin@nure.ua</p>
+            </div>
+         
+    
+    
+            
+      
+    
+        </div>
+        <div id="myModal2" class="modal2">
+    
+       
+            <div class="modal-content1">
+              <span class="close2">&times;</span>
+             
+            make com
+            </div>
+         
+           
+           
+    
+            
+           
+        </div>  </div>
+      
+      
+        <footer>
+            
+            <div class="footer_text">footer</div>
+            <h1>Oleksandr Levin <br>
+            <hi>Kharkiv 2022</h2></hi>
+        </footer>
+        <script >
+            var modal = document.getElementById("myModal");
+            
+            var btn = document.getElementById("myBtn");
+            
+            var span = document.getElementsByClassName("close")[0];
+            
+            btn.onclick = function() {
+              modal.style.display = "block";
+            }
+            
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+            
+         
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+            </script>
+            <script>
+            var modal1 = document.getElementById("myModal1");
+            
+            var btn1 = document.getElementById("myBtn1");
+            
+            var span1 = document.getElementsByClassName("close1")[0];
+            
+            btn1.onclick = function() {
+              modal1.style.display = "block";
+            }
+            
+            span1.onclick = function() {
+              modal1.style.display = "none";
+            }
+            
+         
+            window.onclick = function(event) {
+              if (event.target == modal1) {
+                modal1.style.display = "none";
+              }
+            }
+            </script>
+              <script>
+                var modal2 = document.getElementById("myModal2");
+                
+                var btn2 = document.getElementById("myBtn2");
+                
+                var span2 = document.getElementsByClassName("close2")[0];
+                
+                btn2.onclick = function() {
+                  modal2.style.display = "block";
+                }
+                
+                span2.onclick = function() {
+                  modal2.style.display = "none";
+                }
+                
+             
+                window.onclick = function(event) {
+                  if (event.target == modal2) {
+                    modal2.style.display = "none";
+                  }
+                }
+                </script>
+                <script>
+                function deleteField(){
+                  document.getElementById('first_name').value='';
+                  document.getElementById('last_name').value='';
+                  document.getElementById('email').value='';
+                  document.getElementById('password').value='';
+                }
+             
+                </script>
+                <script>
+
+                  function okno(){ 
+                    var modal2 = document.getElementById("myModal2");
+                    var span2 = document.getElementsByClassName("close2")[0];
+                    modal2.style.display = "block";
+                    var delay_popup = 5000;
+                    setTimeout(myModal2.style.display='block', delay_popup);
+                    alert("Ваши данные успешно приняты!");
+                  
+                  }
+                </script>
+    </body>
+    </html>
